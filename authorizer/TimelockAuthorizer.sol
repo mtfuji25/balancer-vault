@@ -19,8 +19,8 @@ import "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol";
 import "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol";
 import "@balancer-labs/v2-solidity-utils/contracts/helpers/IAuthentication.sol";
 
-import "./interfaces/IAuthorizer.sol";
-import "./interfaces/IVault.sol";
+import "../interfaces/IVault.sol";
+import "../interfaces/IAuthorizer.sol";
 
 /**
  * @dev Basic Authorizer implementation using timelocks.
@@ -234,6 +234,20 @@ contract TimelockAuthorizer is IAuthorizer, IAuthentication {
         // If the account doesn't have the permission explicitly we go through the same process with the global concept
         bytes32 globalActionId = getActionId(actionId, WHATEVER);
         return canPerform(globalActionId, account, where);
+    }
+
+    /**
+     * @dev Tells whether execution `scheduledExecutionId` can be executed or not.
+     * Only true if it is not executed, not cancelled, and if the execution delay has passed.
+     */
+    function canExecute(uint256 scheduledExecutionId) external view returns (bool) {
+        require(scheduledExecutionId < scheduledExecutions.length, "ACTION_DOES_NOT_EXIST");
+        ScheduledExecution storage scheduledExecution = scheduledExecutions[scheduledExecutionId];
+        return
+            !scheduledExecution.executed &&
+            !scheduledExecution.cancelled &&
+            block.timestamp >= scheduledExecution.executableAt;
+        // solhint-disable-previous-line not-rely-on-time
     }
 
     /**
