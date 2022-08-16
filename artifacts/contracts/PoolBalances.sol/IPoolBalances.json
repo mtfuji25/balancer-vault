@@ -1,0 +1,137 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IPoolBalances",
+  "sourceName": "contracts/PoolBalances.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "contract IAsset[]",
+              "name": "assets",
+              "type": "address[]"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "minAmountsOut",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "bytes",
+              "name": "userData",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bool",
+              "name": "toInternalBalance",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct IVault.ExitPoolRequest",
+          "name": "request",
+          "type": "tuple"
+        }
+      ],
+      "name": "toExitPoolBalanceChange",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "contract IAsset[]",
+              "name": "assets",
+              "type": "address[]"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "limits",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "bytes",
+              "name": "userData",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bool",
+              "name": "useInternalBalance",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct IPoolBalances.PoolBalanceChange",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "contract IAsset[]",
+              "name": "assets",
+              "type": "address[]"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "maxAmountsIn",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "bytes",
+              "name": "userData",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bool",
+              "name": "fromInternalBalance",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct IVault.JoinPoolRequest",
+          "name": "request",
+          "type": "tuple"
+        }
+      ],
+      "name": "toJoinPoolBalanceChange",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "contract IAsset[]",
+              "name": "assets",
+              "type": "address[]"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "limits",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "bytes",
+              "name": "userData",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bool",
+              "name": "useInternalBalance",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct IPoolBalances.PoolBalanceChange",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

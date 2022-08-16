@@ -1,0 +1,2208 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\AssetHelpers.sol": {
+      "lastModificationDate": 1660672318220,
+      "contentHash": "6e9691ff1e70d6c40c068018af700e94",
+      "sourceName": "contracts/AssetHelpers.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/misc/IWETH.sol",
+        "./interfaces/IAsset.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "AssetHelpers"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\openzeppelin\\IERC20.sol": {
+      "lastModificationDate": 1660672318201,
+      "contentHash": "227d410099f794483090324d1492bc09",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\misc\\IWETH.sol": {
+      "lastModificationDate": 1660672318197,
+      "contentHash": "51a474088f8ad7daccef6f57904a5988",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/misc/IWETH.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../openzeppelin/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IWETH"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\interfaces\\IAsset.sol": {
+      "lastModificationDate": 1660672318226,
+      "contentHash": "8571bd894a72974d092d8bb0d510213d",
+      "sourceName": "contracts/interfaces/IAsset.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IAsset"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\AssetTransfersHandler.sol": {
+      "lastModificationDate": 1660672318221,
+      "contentHash": "b2c7302237a30f20df0428e6260e9b0a",
+      "sourceName": "contracts/AssetTransfersHandler.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/Address.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/misc/IWETH.sol",
+        "./interfaces/IAsset.sol",
+        "./interfaces/IVault.sol",
+        "./AssetHelpers.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "AssetTransfersHandler"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\math\\Math.sol": {
+      "lastModificationDate": 1660672318197,
+      "contentHash": "22b42a534fada873bd00d92a024ce3e0",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../helpers/BalancerErrors.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\helpers\\BalancerErrors.sol": {
+      "lastModificationDate": 1660672318192,
+      "contentHash": "5b789ad7fcf7d02c6836fa8c206b939c",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Errors"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\openzeppelin\\SafeERC20.sol": {
+      "lastModificationDate": 1660672318203,
+      "contentHash": "0dd01dfe51c18c72fdff0714c4fd8ceb",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../helpers/BalancerErrors.sol",
+        "./IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\openzeppelin\\Address.sol": {
+      "lastModificationDate": 1660672318198,
+      "contentHash": "73409464b67b6e1fd2112182cc4dfdbf",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/Address.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../helpers/BalancerErrors.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\interfaces\\IVault.sol": {
+      "lastModificationDate": 1660672318229,
+      "contentHash": "3fc5808e9f8522542a7e2803b01ebf4e",
+      "sourceName": "contracts/interfaces/IVault.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/ISignaturesValidator.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/ITemporarilyPausable.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/misc/IWETH.sol",
+        "./IAsset.sol",
+        "./IAuthorizer.sol",
+        "./IFlashLoanRecipient.sol",
+        "./IProtocolFeesCollector.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IVault"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\helpers\\ISignaturesValidator.sol": {
+      "lastModificationDate": 1660672318194,
+      "contentHash": "002c3583802f967e1e243a26f27935c8",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/helpers/ISignaturesValidator.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ISignaturesValidator"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\helpers\\ITemporarilyPausable.sol": {
+      "lastModificationDate": 1660672318194,
+      "contentHash": "83e8d029f44d2989a7d5575fc6784826",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/helpers/ITemporarilyPausable.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ITemporarilyPausable"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\interfaces\\IAuthorizer.sol": {
+      "lastModificationDate": 1660672318226,
+      "contentHash": "2135974a65cc60746c01cfc589794f9f",
+      "sourceName": "contracts/interfaces/IAuthorizer.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IAuthorizer"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\interfaces\\IFlashLoanRecipient.sol": {
+      "lastModificationDate": 1660672318227,
+      "contentHash": "4971a6498711048f70357df8d27956d3",
+      "sourceName": "contracts/interfaces/IFlashLoanRecipient.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IFlashLoanRecipient"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\interfaces\\IProtocolFeesCollector.sol": {
+      "lastModificationDate": 1660672318228,
+      "contentHash": "6759ec3c5d3bf159fda549ee120c4c79",
+      "sourceName": "contracts/interfaces/IProtocolFeesCollector.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "./IVault.sol",
+        "./IAuthorizer.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IProtocolFeesCollector"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\test\\MockAssetTransfersHandler.sol": {
+      "lastModificationDate": 1660672318229,
+      "contentHash": "45361b960acd347516f84e34d69af1ff",
+      "sourceName": "contracts/test/MockAssetTransfersHandler.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/math/FixedPoint.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol",
+        "../AssetTransfersHandler.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "MockAssetTransfersHandler"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\math\\FixedPoint.sol": {
+      "lastModificationDate": 1660672318196,
+      "contentHash": "3a55c7ebf88bce8af5f838a442aedc71",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/math/FixedPoint.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./LogExpMath.sol",
+        "../helpers/BalancerErrors.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "FixedPoint"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\math\\LogExpMath.sol": {
+      "lastModificationDate": 1660672318197,
+      "contentHash": "440c7b6035b718ec3b40330efcc1789b",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/math/LogExpMath.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../helpers/BalancerErrors.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "LogExpMath"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\test\\MockFlashLoanRecipient.sol": {
+      "lastModificationDate": 1660672318229,
+      "contentHash": "2c21b3881439b84993a94f3845b4dfa0",
+      "sourceName": "contracts/test/MockFlashLoanRecipient.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol",
+        "@balancer-labs/v2-standalone-utils/contracts/test/TestToken.sol",
+        "../interfaces/IFlashLoanRecipient.sol",
+        "../interfaces/IVault.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "MockFlashLoanRecipient"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\standalone-utils\\contracts\\test\\TestToken.sol": {
+      "lastModificationDate": 1660672318215,
+      "contentHash": "37b81e16c973b1fc71844b75415bf2ce",
+      "sourceName": "@balancer-labs/v2-standalone-utils/contracts/test/TestToken.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ERC20Burnable.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/AccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "TestToken"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\openzeppelin\\ERC20.sol": {
+      "lastModificationDate": 1660672318199,
+      "contentHash": "c3264e84bb80b3d7c8539e5a845a31fc",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ERC20.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../helpers/BalancerErrors.sol",
+        "./IERC20.sol",
+        "./SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\openzeppelin\\ERC20Burnable.sol": {
+      "lastModificationDate": 1660672318199,
+      "contentHash": "e1f375a9fd0668548ce65621736986ff",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ERC20Burnable.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20Burnable"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\openzeppelin\\AccessControl.sol": {
+      "lastModificationDate": 1660672318198,
+      "contentHash": "7a8f3af252b75bdb7241397c4dedea75",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../helpers/BalancerErrors.sol",
+        "./EnumerableSet.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "AccessControl"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\openzeppelin\\SafeMath.sol": {
+      "lastModificationDate": 1660672318203,
+      "contentHash": "82a87a3a78fe68a15646cdd782349013",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../helpers/BalancerErrors.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\openzeppelin\\EnumerableSet.sol": {
+      "lastModificationDate": 1660672318200,
+      "contentHash": "690c43f535191a901c4e7ffac770cced",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../helpers/BalancerErrors.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\test\\MockPool.sol": {
+      "lastModificationDate": 1660672318230,
+      "contentHash": "21dee4a188c66ebc94d786acd03319d3",
+      "sourceName": "contracts/test/MockPool.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/math/FixedPoint.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "../interfaces/IVault.sol",
+        "../interfaces/IGeneralPool.sol",
+        "../interfaces/IMinimalSwapInfoPool.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "MockPool"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\interfaces\\IGeneralPool.sol": {
+      "lastModificationDate": 1660672318227,
+      "contentHash": "e1d289b160302cce2c3282b4122912f5",
+      "sourceName": "contracts/interfaces/IGeneralPool.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IBasePool.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IGeneralPool"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\interfaces\\IMinimalSwapInfoPool.sol": {
+      "lastModificationDate": 1660672318228,
+      "contentHash": "a23fccea796b26f00ddc81ae586fbc52",
+      "sourceName": "contracts/interfaces/IMinimalSwapInfoPool.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IBasePool.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IMinimalSwapInfoPool"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\interfaces\\IBasePool.sol": {
+      "lastModificationDate": 1660672318227,
+      "contentHash": "017fa50b02073c4f01368032aeeb2119",
+      "sourceName": "contracts/interfaces/IBasePool.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IVault.sol",
+        "./IPoolSwapStructs.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IBasePool"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\interfaces\\IPoolSwapStructs.sol": {
+      "lastModificationDate": 1660672318228,
+      "contentHash": "5010973bfdbe8c7df9f80104c5049e05",
+      "sourceName": "contracts/interfaces/IPoolSwapStructs.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "./IVault.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IPoolSwapStructs"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\Swaps.sol": {
+      "lastModificationDate": 1660672318223,
+      "contentHash": "84d997b0932a3f4c1a1cb974b1e7fda3",
+      "sourceName": "contracts/Swaps.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/EnumerableMap.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/EnumerableSet.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeCast.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol",
+        "./PoolBalances.sol",
+        "./interfaces/IPoolSwapStructs.sol",
+        "./interfaces/IGeneralPool.sol",
+        "./interfaces/IMinimalSwapInfoPool.sol",
+        "./balances/BalanceAllocation.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Swaps"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\helpers\\InputHelpers.sol": {
+      "lastModificationDate": 1660672318194,
+      "contentHash": "6c43de5bbe0e6b8ba77907e54eba6ccf",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../openzeppelin/IERC20.sol",
+        "./BalancerErrors.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "InputHelpers"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\openzeppelin\\EnumerableMap.sol": {
+      "lastModificationDate": 1660672318200,
+      "contentHash": "5d3da8b4dcbcf40a5a32c350b1dcf5ac",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/EnumerableMap.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "../helpers/BalancerErrors.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "EnumerableMap"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\openzeppelin\\ReentrancyGuard.sol": {
+      "lastModificationDate": 1660672318202,
+      "contentHash": "2862bc5c9b7af120c600f598682307b7",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../helpers/BalancerErrors.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\openzeppelin\\SafeCast.sol": {
+      "lastModificationDate": 1660672318203,
+      "contentHash": "4a820d1981f326ae8b722220514c3f26",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeCast.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../helpers/BalancerErrors.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SafeCast"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\PoolBalances.sol": {
+      "lastModificationDate": 1660687657180,
+      "contentHash": "e0a19dfeee121a9c681ec9c2300215ee",
+      "sourceName": "contracts/PoolBalances.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol",
+        "./Fees.sol",
+        "./PoolTokens.sol",
+        "./UserBalance.sol",
+        "./interfaces/IBasePool.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IPoolBalances",
+        "PoolBalances"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\balances\\BalanceAllocation.sol": {
+      "lastModificationDate": 1660672318225,
+      "contentHash": "b2a7220d918b185ef6e3ad3238551a2d",
+      "sourceName": "contracts/balances/BalanceAllocation.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "BalanceAllocation"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\Fees.sol": {
+      "lastModificationDate": 1660672318221,
+      "contentHash": "5eb2b32b3f6c66fa46dbc324c37fa665",
+      "sourceName": "contracts/Fees.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/math/FixedPoint.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol",
+        "./ProtocolFeesCollector.sol",
+        "./VaultAuthorization.sol",
+        "./interfaces/IVault.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Fees"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\PoolTokens.sol": {
+      "lastModificationDate": 1660672318223,
+      "contentHash": "5c2e96464b71485bb3a2be02d8ee3b6f",
+      "sourceName": "contracts/PoolTokens.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol",
+        "./AssetManagers.sol",
+        "./PoolRegistry.sol",
+        "./balances/BalanceAllocation.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "PoolTokens"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\UserBalance.sol": {
+      "lastModificationDate": 1660672318224,
+      "contentHash": "05f95f3a4f82f38d2d50b49b4ae96d64",
+      "sourceName": "contracts/UserBalance.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeCast.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol",
+        "./AssetTransfersHandler.sol",
+        "./VaultAuthorization.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "UserBalance"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\ProtocolFeesCollector.sol": {
+      "lastModificationDate": 1660672318223,
+      "contentHash": "6fc01ac767c0168569645e11b7898124",
+      "sourceName": "contracts/ProtocolFeesCollector.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/Authentication.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol",
+        "./interfaces/IProtocolFeesCollector.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ProtocolFeesCollector"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\VaultAuthorization.sol": {
+      "lastModificationDate": 1660672318224,
+      "contentHash": "3d9c428adf072c39f12580d8851348fd",
+      "sourceName": "contracts/VaultAuthorization.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/Authentication.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/TemporarilyPausable.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/SignaturesValidator.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol",
+        "./interfaces/IVault.sol",
+        "./interfaces/IAuthorizer.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "VaultAuthorization"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\helpers\\Authentication.sol": {
+      "lastModificationDate": 1660672318192,
+      "contentHash": "afc6674b750c2a2bce9e9a1e1d47b7aa",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/helpers/Authentication.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BalancerErrors.sol",
+        "./IAuthentication.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Authentication"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\helpers\\IAuthentication.sol": {
+      "lastModificationDate": 1660672318194,
+      "contentHash": "6bf425ca65051509b82564fa5cd3f414",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/helpers/IAuthentication.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IAuthentication"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\helpers\\TemporarilyPausable.sol": {
+      "lastModificationDate": 1660672318195,
+      "contentHash": "f5ca7970aa1f94cece6934d34fbf72e3",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/helpers/TemporarilyPausable.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BalancerErrors.sol",
+        "./ITemporarilyPausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "TemporarilyPausable"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\helpers\\SignaturesValidator.sol": {
+      "lastModificationDate": 1660672318195,
+      "contentHash": "f948e1faa3443d183ae302b872e9d067",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/helpers/SignaturesValidator.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BalancerErrors.sol",
+        "./ISignaturesValidator.sol",
+        "../openzeppelin/EIP712.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SignaturesValidator"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\solidity-utils\\contracts\\openzeppelin\\EIP712.sol": {
+      "lastModificationDate": 1660672318199,
+      "contentHash": "3f72f246d20ae70c8162f0d42647963a",
+      "sourceName": "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/EIP712.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "EIP712"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\AssetManagers.sol": {
+      "lastModificationDate": 1660672318221,
+      "contentHash": "78451b415587b15809817ad2ea9c1fa7",
+      "sourceName": "contracts/AssetManagers.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol",
+        "./UserBalance.sol",
+        "./balances/BalanceAllocation.sol",
+        "./balances/GeneralPoolsBalance.sol",
+        "./balances/MinimalSwapInfoPoolsBalance.sol",
+        "./balances/TwoTokenPoolsBalance.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "AssetManagers"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\PoolRegistry.sol": {
+      "lastModificationDate": 1660672318222,
+      "contentHash": "277c6dcfe8ff4063e5e071c6ea1ac842",
+      "sourceName": "contracts/PoolRegistry.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol",
+        "./VaultAuthorization.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "PoolRegistry"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\balances\\GeneralPoolsBalance.sol": {
+      "lastModificationDate": 1660672318225,
+      "contentHash": "e8802d00df5a0c0da17e2e17804ddabb",
+      "sourceName": "contracts/balances/GeneralPoolsBalance.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/EnumerableMap.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "./BalanceAllocation.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "GeneralPoolsBalance"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\balances\\MinimalSwapInfoPoolsBalance.sol": {
+      "lastModificationDate": 1660672318225,
+      "contentHash": "681774d59ce9b1268f41a4250ebf569e",
+      "sourceName": "contracts/balances/MinimalSwapInfoPoolsBalance.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/EnumerableSet.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "./BalanceAllocation.sol",
+        "../PoolRegistry.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "MinimalSwapInfoPoolsBalance"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\balances\\TwoTokenPoolsBalance.sol": {
+      "lastModificationDate": 1660672318226,
+      "contentHash": "02f2923d08a4f96aa5884abca9235196",
+      "sourceName": "contracts/balances/TwoTokenPoolsBalance.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "./BalanceAllocation.sol",
+        "../PoolRegistry.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "TwoTokenPoolsBalance"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\FlashLoans.sol": {
+      "lastModificationDate": 1660672318222,
+      "contentHash": "c0d6ad66c0d3fb9ded1dc0585626e8a8",
+      "sourceName": "contracts/FlashLoans.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol",
+        "./Fees.sol",
+        "./interfaces/IFlashLoanRecipient.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "FlashLoans"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\test\\MockInternalBalanceRelayer.sol": {
+      "lastModificationDate": 1660672318229,
+      "contentHash": "ee77e485c6cf5b1c56691346f7f8870d",
+      "sourceName": "contracts/test/MockInternalBalanceRelayer.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol",
+        "../interfaces/IVault.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "MockInternalBalanceRelayer"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\Authorizer.sol": {
+      "lastModificationDate": 1660672318221,
+      "contentHash": "338523cb701f49d0bfb09a6c382ab25b",
+      "sourceName": "contracts/Authorizer.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IAuthorizer.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/AccessControl.sol",
+        "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Authorizer"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\test\\BalanceAllocationMock.sol": {
+      "lastModificationDate": 1660672318229,
+      "contentHash": "3e320986728321a1edb234d459d450de",
+      "sourceName": "contracts/test/BalanceAllocationMock.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../balances/BalanceAllocation.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "BalanceAllocationMock"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\test\\EthForceSender.sol": {
+      "lastModificationDate": 1660672318229,
+      "contentHash": "57082b947db99e29c20876bdca53f11f",
+      "sourceName": "contracts/test/EthForceSender.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 9999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "EthForceSender"
+      ]
+    },
+    "M:\\Cryptocurrency Development\\Mozaic Finance\\balancer-v2-monorepo-stable\\pkg\\vault\\contracts\\Vault.sol": {
+      "lastModificationDate": 1660672318224,
+      "contentHash": "13d49082df58fe2746e5a0232e89faeb",
+      "sourceName": "contracts/Vault.sol",
+      "solcConfig": {
+        "version": "0.7.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1500
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@balancer-labs/v2-solidity-utils/contracts/misc/IWETH.sol",
+        "./interfaces/IAuthorizer.sol",
+        "./VaultAuthorization.sol",
+        "./FlashLoans.sol",
+        "./Swaps.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Vault"
+      ]
+    }
+  }
+}
